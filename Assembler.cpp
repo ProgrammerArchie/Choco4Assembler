@@ -55,7 +55,7 @@ int main(void){
         std::cout << "WARNING: 'LSH [num]' <- [num] > 3, [num] ROUNDED DOWN TO 3.\n";
       }
       else byte += (uint8_t) std::strtoul(tokens[i]);
-      bytes = 2
+      bytes = 2;
     }
     else if(tokens[i] == "RSH"){
       byte = 0b00010000;
