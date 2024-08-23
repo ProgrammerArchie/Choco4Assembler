@@ -298,8 +298,8 @@ int main(void){
       }
       else byte += (uint8_t) (std::stoul(tokens[i]) << 2);
     }
+    ofile << byte;
     if(bytes > 1){
-      ofile << byte;
       for(uint8_t i = 0; i < bytes; ++i){
         byte = 0xff & (uint8_t) std::stoul(tokens[++i]);
         ofile << byte;
